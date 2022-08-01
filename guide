@@ -1,0 +1,23 @@
+### Team member #2
+- Create MusicAlbum class in a separate .rb file :topic 
+- Create Genre class with an association to the Item class (in a separate .rb file).
+- All MusicAlbum class properties visible in the diagram should be defined and set up in the constructor method.
+- All Genre class properties visible in the diagram should be defined and set up in the constructor method.
+- Implement methods:
+    - add_item method in the Genre class
+        - should take an instance of the Item class as an input
+        - should add the input item to the collection of items
+        - should add self as a property of the item object (by using the correct setter from the item object)
+    - can_be_archived?() in the MusicAlbum class
+        - should override the method from the parent class
+        - should return true if parent's method returns true AND if on_spotify equals true
+        - otherwise, it should return false
+ - Add unit tests for all implemented methods.
+ - The following options should be available:
+    - List all music albums
+    - List all genres (e.g 'Comedy', 'Thriller')
+    - Add a music album
+ - All data should be preserved by saving collections in .json files.
+ - Create a schema.sql file with tables that will be analogical to the structure of the classes that you created:
+    - music_albums table (add all properties and associations from the parent Item class as table columns)
+    - genres table
