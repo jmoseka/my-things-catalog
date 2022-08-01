@@ -1,9 +1,9 @@
 ### Team member #2
-- Create MusicAlbum class in a separate .rb file :topic 
-- Create Genre class with an association to the Item class (in a separate .rb file).
-- All MusicAlbum class properties visible in the diagram should be defined and set up in the constructor method.
-- All Genre class properties visible in the diagram should be defined and set up in the constructor method.
-- Implement methods:
+-[1pt] Create MusicAlbum class in a separate .rb file :Create Music Album
+- [1pt] Create Genre class with an association to the Item class (in a separate .rb file). Create genre class
+- [2pts] All MusicAlbum class properties visible in the diagram should be defined and set up in the constructor method. Set up Constructor
+- [2pts] All Genre class properties visible in the diagram should be defined and set up in the constructor method.Set up genre properties
+- [6pts] Implement methods: Create Methods
     - add_item method in the Genre class
         - should take an instance of the Item class as an input
         - should add the input item to the collection of items
@@ -12,12 +12,12 @@
         - should override the method from the parent class
         - should return true if parent's method returns true AND if on_spotify equals true
         - otherwise, it should return false
- - Add unit tests for all implemented methods.
- - The following options should be available:
+ - [3pts] Add unit tests for all implemented methods. : Add unit tests
+ - [3pts] The following options should be available: Display list
     - List all music albums
     - List all genres (e.g 'Comedy', 'Thriller')
     - Add a music album
- - All data should be preserved by saving collections in .json files.
- - Create a schema.sql file with tables that will be analogical to the structure of the classes that you created:
+ - [4pt] All data should be preserved by saving collections in .json files. Store data
+ - [2pts] Create a schema.sql file with tables that will be analogical to the structure of the classes that you created: Create a schema.sql file
     - music_albums table (add all properties and associations from the parent Item class as table columns)
     - genres table
