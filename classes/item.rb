@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Item
   def initialize(genre, author, source, label, publish_date)
     @id = Random.rand(1..1000)
@@ -11,9 +9,13 @@ class Item
     @archived = false
   end
 
+  private
+
   def can_be_archived?
     DateTime.now.year - @published_date.year > 10
   end
+
+  public
 
   def move_to_archive
     @archived = true if can_be_archived?

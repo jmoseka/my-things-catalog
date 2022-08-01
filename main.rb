@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require './classes/app'
 
 def main
@@ -8,12 +6,11 @@ def main
 end
 
 def homepage(input)
-    case input
-    when '13'
-        puts 'Thanks for using the App'
-        exit
-    end
+  case input
+  when '13'
+    puts 'Thanks for using the App'
+    exit
+  end
 end
-
 
 main
