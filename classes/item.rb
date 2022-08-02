@@ -4,7 +4,7 @@ class Item
 
   def initialize(publish_date)
     @id = rand(1..100_000)
-    @publish_date = publish_date
+    @publish_date = Date.parse(publish_date)
     @archived = false
   end
 
