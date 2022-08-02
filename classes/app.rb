@@ -1,4 +1,5 @@
 class App
+  # rubocop:disable Metrics/CyclomaticComplexity
   def menu
     puts
     puts 'Welcome to Catalog of things!'
@@ -25,7 +26,7 @@ class App
       puts "#{option} - #{string}"
     end
     print "\n Enter option from menu-list: "
-    selection = gets.chomp
+    gets.chomp
   end
 
   def run
@@ -33,4 +34,5 @@ class App
       homepage(menu)
     end
   end
+  # rubocop:enable Metrics/CyclomaticComplexity
 end
