@@ -3,10 +3,9 @@ class Item
   attr_reader :id, :archived
 
   def initialize(publish_date)
-    super()
     @id = rand(1..100_000)
     @publish_date = publish_date
-    @archived = archived
+    @archived = false
   end
 
   def can_be_archived?
