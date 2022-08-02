@@ -1,5 +1,4 @@
 class App
-  # rubocop:disable Metrics/CyclomaticComplexity
   def menu
     puts
     puts 'Welcome to Catalog of things!'
@@ -34,5 +33,4 @@ class App
       homepage(menu)
     end
   end
-  # rubocop:enable Metrics/CyclomaticComplexity
 end
