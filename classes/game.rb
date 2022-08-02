@@ -11,6 +11,7 @@ class Game < Item
   def can_be_archived?
     difference = Time.now.year - @last_played_at
     return true if super() && difference > 2
+
     false
   end
 end
