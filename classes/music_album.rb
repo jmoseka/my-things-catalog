@@ -1,7 +1,11 @@
-class MusicAlbum
+require_relative 'item'
+require 'date'
+
+class MusicAlbum < Item
   attr_accessor :on_spotify
 
-  def initialize(on_spotify: true)
+  def initialize( on_spotify: true)
+    super(id: 50, publish_date: Date.today.to_s)
     @on_spotify = on_spotify
   end
 
@@ -10,3 +14,5 @@ class MusicAlbum
   end
 
 end
+
+p music_album = MusicAlbum.new()
