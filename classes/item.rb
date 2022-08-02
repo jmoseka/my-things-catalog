@@ -4,21 +4,20 @@ class Item
   attr_accessor :label, :publish_date, :genre, :author, :source
   attr_reader :id, :archived
 
-  def initialize(publish_date:, id:, archived: false)
-    @id = id || Random.rand(1..1_000_000)
-    @publish_date = Date.parse(publish_date)
+  def initialize(publish_date)
+    super()
+    @id = rand(1..100_000)
+    @publish_date = publish_date
     @archived = archived
+  end
+
+  def can_be_archived?
+    current = Time.now.year
+    difference = current - publish_date.to_i
+    difference > 10
   end
 
   def move_to_archive
     @archived = true if can_be_archived?
   end
-
-  private
-
-  def can_be_archived?
-    DateTime.now.year - @published_date.year > 10
-  end
 end
-
-# item_one = Item.new(publish_date: '2022-02-05')
