@@ -1,4 +1,4 @@
-require_relative '../classes/label.rb'
+require_relative '../classes/label'
 
 describe 'Label object' do
   context 'should create an instance of Label class' do
@@ -14,8 +14,6 @@ describe 'Label object' do
 
       expect(label.title).not_to eq 'Cindy'
       expect(label.color).not_to eq 'Red'
-
     end
-
   end
 end

@@ -1,4 +1,4 @@
-require_relative '../classes/book.rb'
+require_relative '../classes/book'
 
 describe 'Book object' do
   context 'should create an instance of Book class' do
@@ -24,7 +24,7 @@ describe 'Book object' do
     end
 
     it 'tests the functionality of can_be_archived method ' do
-        expect(book.archived).to eq false
-      end
+      expect(book.archived).to eq false
+    end
   end
 end
