@@ -1,6 +1,7 @@
 require './classes/app'
 require './classes/games_manager'
 require './classes/author_manager'
+require './classes/music_manager'
 
 def main
   app = App.new
@@ -9,6 +10,13 @@ end
 
 def homepage(input)
   case input
+
+  when '2'
+    @music_manager.list_all_music_album
+  when '10'
+    @music_manager.add_music_album
+  when '5'
+    @music_manager.list_all_genres
   when '9'
     add_book
   when '13'
@@ -22,6 +30,8 @@ def homepage(input)
     @games_manager.list_games
   when '7'
     @author_manager.list_authors
+    # when '8'
+    #   @author_manager.add_music_album
   end
 end
 
