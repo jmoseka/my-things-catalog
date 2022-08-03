@@ -1,5 +1,5 @@
 class Genre
-  attr_accessor :items
+  attr_accessor :items, :name
 
   def initialize(name)
     @id = rand 1..1000
