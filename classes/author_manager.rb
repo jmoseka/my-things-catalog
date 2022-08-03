@@ -30,4 +30,29 @@ class AuthorManager
       end
     end
   end
+
+  def load_authors
+    data = []
+    file = './data/author.json'
+    return if File.zero?(file)
+
+    JSON.parse(File.read(file)).each do |author|
+      data.push(Author.new(author['first_name'], author['last_name']))
+    end
+
+    data.each do |item|
+      first_name = item.first_name
+      last_name = item.last_name
+      author = Author.new(first_name, last_name)
+      @authors << author unless @authors.include?(author)
+    end
+  end
+
+  def store_authors
+    data = []
+    @authors.each do |author|
+      data.push({ first_name: author.first_name, last_name: author.last_name })
+    end
+    File.write('./data/author.json', JSON.generate(data))
+  end
 end
