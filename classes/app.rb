@@ -1,4 +1,9 @@
 class App
+  def initialize
+    @games_manager = GamesManager.new
+    @author_manager = AuthorManager.new
+  end
+
   def menu
     puts
     puts 'Welcome to Catalog of things!'
