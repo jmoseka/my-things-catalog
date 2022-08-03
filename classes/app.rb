@@ -2,6 +2,8 @@ class App
   def initialize
     @games_manager = GamesManager.new
     @author_manager = AuthorManager.new
+    @books = []
+    @labels = []
   end
 
   def menu
