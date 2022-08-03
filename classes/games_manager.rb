@@ -41,4 +41,31 @@ class GamesManager
       end
     end
   end
+
+  def load_games
+    data = []
+    file = './data/games.json'
+    return if File.zero?(file)
+
+    JSON.parse(File.read(file)).each do |games|
+      data.push(Game.new(games['multiplayer'], games['last_played_at'], games['publish_date']))
+    end
+
+    data.each do |item|
+      multi_player = item.multiplayer
+      last_played_at = item.last_played_at
+      publish_date = item.publish_date
+      game = Game.new(multi_player, last_played_at, publish_date)
+      @games << game unless @games.include?(game)
+    end
+  end
+
+  def store_games
+    data = []
+    @games.each do |game|
+      data.push({ multiplayer: game.multiplayer, publish_date: game.publish_date,
+                  last_played_at: game.last_played_at })
+    end
+    File.write('./data/games.json', JSON.generate(data))
+  end
 end

@@ -34,6 +34,8 @@ class App
   end
 
   def run
+    @games_manager.load_games
+    @author_manager.load_authors
     loop do
       homepage(menu)
     end

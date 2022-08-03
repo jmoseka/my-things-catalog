@@ -12,6 +12,8 @@ def homepage(input)
   when '9'
     add_book
   when '13'
+    @games_manager.store_games
+    @author_manager.store_authors
     puts 'Thanks for using the App'
     exit
   when '12'
