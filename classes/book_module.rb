@@ -25,7 +25,6 @@ module BookModule
       'cover_state' => book.cover_state
     }
     @books << hash
-
   end
 
   def add_label_instructions(_labels)
