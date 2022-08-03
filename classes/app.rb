@@ -2,6 +2,7 @@ class App
   def initialize
     @games_manager = GamesManager.new
     @author_manager = AuthorManager.new
+    @music_manager = MusicManager.new
   end
 
   def menu
