@@ -13,5 +13,4 @@ describe MusicAlbum do
   it 'music should be an archived' do
     expect(@music.can_be_archived?).to be true
   end
-
 end
