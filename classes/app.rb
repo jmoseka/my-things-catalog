@@ -1,4 +1,9 @@
+require './classes/book_module'
+
 class App
+  include BookModule
+  attr_accessor :books, :labels
+
   def initialize
     @games_manager = GamesManager.new
     @author_manager = AuthorManager.new

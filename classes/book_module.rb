@@ -18,7 +18,7 @@ module BookModule
   end
 
   def add_book(publisher, cover_state, publish_date)
-    books << Book.new(publisher, cover_state, publish_date)
+    @books << Book.new(publisher, cover_state, publish_date)
   end
 
   def add_label_instructions(_labels)
@@ -35,7 +35,7 @@ module BookModule
   end
 
   def add_label(title, color)
-    labels << Label.new(title, color)
+    @labels << Label.new(title, color)
   end
 
   def list_all_books(books)
@@ -44,7 +44,7 @@ module BookModule
     puts "\nPublisher \t| Cover State \t| Publish Date"
     puts '--------------------------------------------'
     books.each do |book|
-      puts "#{book.publisher} \t\t| #{book.cover_state} \t| #{book.publish_date} "
+      puts "#{book.publisher} \t| #{book.cover_state} \t| #{book.publish_date} "
       puts "\n----------------------------"
     end
   end
@@ -56,7 +56,6 @@ module BookModule
     puts '----------------------------'
     labels.each do |lbl|
       puts "#{lbl.title} \t| #{lbl.color} "
-      puts "\n----------------------------"
     end
   end
 end

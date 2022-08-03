@@ -1,6 +1,7 @@
 require './classes/app'
 require './classes/games_manager'
 require './classes/author_manager'
+require './classes/book'
 
 def main
   app = App.new
@@ -9,8 +10,13 @@ end
 
 def homepage(input)
   case input
+  when '1'
+    list_all_books(@books)
+  when '6'
+    list_all_labels(@labels)
   when '9'
-    add_book
+    add_book_instructions(@books)
+    add_label_instructions(@labels)
   when '13'
     @games_manager.store_games
     @author_manager.store_authors
