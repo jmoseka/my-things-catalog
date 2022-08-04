@@ -1,8 +1,10 @@
-require './classes/book_module'
-require './classes/store_module'
+require_relative '../modules/book_module'
+require_relative '../modules/label_module'
+require_relative '../modules/store_module'
 
 class App
   include BookModule
+  include LabelModule
   include StoreModule
   attr_accessor :books, :labels
 
@@ -13,6 +15,7 @@ class App
     @labels = []
     @music_manager = MusicManager.new
     @genres_manager = GenreManager.new
+    load_info
   end
 
   def menu
@@ -51,5 +54,10 @@ class App
     loop do
       homepage(menu)
     end
+  end
+
+  def load_info
+    @books = load_data('books')
+    @labels = load_data('labels')
   end
 end

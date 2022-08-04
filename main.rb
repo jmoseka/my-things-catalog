@@ -1,7 +1,6 @@
 require './classes/app'
 require './classes/games_manager'
 require './classes/author_manager'
-require './classes/book'
 require './classes/music_manager'
 require './classes/genre_manager'
 
@@ -17,7 +16,7 @@ def homepage(input)
   when '2'
     @music_manager.list_all_music_album
   when '5'
-    @music_manager.list_all_genres
+    @genres_manager.list_all_genres
   when '6'
     list_all_labels(@labels)
   when '10'

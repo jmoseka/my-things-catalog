@@ -1,5 +1,4 @@
-require_relative './book'
-require_relative './label'
+require_relative '../classes/book'
 
 module BookModule
   def add_book_instructions(books)
@@ -25,30 +24,6 @@ module BookModule
       'cover_state' => book.cover_state
     }
     @books << hash
-    @books << Book.new(publisher, cover_state, publish_date)
-  end
-
-  def add_label_instructions(_labels)
-    puts "\n---------------------------"
-    puts "ENTER LABEL DETAILS \n"
-    print 'Enter book label [e.g title] : '
-    title = gets.chomp
-    print 'Enter color of book : '
-    color = gets.chomp
-    add_label(title, color)
-    puts 'Label created successfully !!'
-    puts '---------------------------'
-    books
-  end
-
-  def add_label(title, color)
-    lbl = Label.new(title, color)
-    hash = {
-      'title' => lbl.title,
-      'color' => lbl.color
-    }
-    @labels << hash
-    @labels << Label.new(title, color)
   end
 
   def list_all_books(books)
@@ -58,19 +33,7 @@ module BookModule
     puts '--------------------------------------------'
     books.each do |book|
       puts "#{book['publisher']} \t\t| #{book['cover_state']} \t| #{book['publish_date']} "
-      puts "#{book.publisher} \t| #{book.cover_state} \t| #{book.publish_date} "
       puts "\n----------------------------"
-    end
-  end
-
-  def list_all_labels(labels)
-    puts "\nNo labels available." if labels.empty?
-    puts "\n\t\t LIST OF LABELS"
-    puts "\nLabels \t| Color "
-    puts '----------------------------'
-    labels.each do |lbl|
-      puts "#{lbl['title']} \t| #{lbl['color']} "
-      puts "#{lbl.title} \t| #{lbl.color} "
     end
   end
 end
