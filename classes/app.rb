@@ -1,4 +1,4 @@
-require_relative'../modules/book_module'
+require_relative '../modules/book_module'
 require_relative '../modules/store_module'
 
 class App
