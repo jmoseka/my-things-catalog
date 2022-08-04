@@ -1,13 +1,13 @@
 CREATE TABLE item (
-    id BIGSERIAL PRIMARY KEY,
-    publish_date DATE,
-    archived BOOLEAN,
-    genre_id INTEGER,
-    author_id INTEGER,
-    label_id INTEGER,
-    CONSTRAINT fkey_label FOREIGN KEY (label_id) REFERENCES label (id),
-    CONSTRAINT fkey_genre FOREIGN KEY (genre_id) REFERENCES genres (id),
-    CONSTRAINT fkey_author FOREIGN KEY (author_id) REFERENCES author (id)
+id BIGSERIAL PRIMARY KEY,
+publish_date DATE,
+archived BOOLEAN,
+genre_id INTEGER,
+author_id INTEGER,
+label_id INTEGER,
+CONSTRAINT fk_label FOREIGN KEY (label_id) REFERENCES label (id),
+CONSTRAINT fk_genre FOREIGN KEY (genre_id) REFERENCES genres (id),
+CONSTRAINT fk_author FOREIGN KEY (author_id) REFERENCES author (id)
 );
 
 CREATE TABLE author (
@@ -32,12 +32,16 @@ CREATE TABLE label (
 id BIGSERIAL PRIMARY KEY,
 title VARCHAR(100),
 color VARCHAR(50),
-items INT []
+items INTEGER []
 );
 
 CREATE TABLE Book (
 id BIGSERIAL PRIMARY KEY,
 publisher VARCHAR(100),
 cover_date VARCHAR(100),
-FOREIGN KEY(id) REFERENCES item(id)
+archived BOOLEAN,
+label_id INTEGER,
+genre_id INTEGER,
+author_id INTEGER,
+CONSTRAINT fk_label FOREIGN KEY(label_id) REFERENCES label(id)
 );
