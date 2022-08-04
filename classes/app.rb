@@ -4,9 +4,6 @@ require './classes/store_module'
 class App
   include BookModule
   include StoreModule
-
-class App
-  include BookModule
   attr_accessor :books, :labels
 
   def initialize

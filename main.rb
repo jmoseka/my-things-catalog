@@ -16,11 +16,6 @@ def homepage(input)
     list_all_books(@books)
   when '6'
     list_all_labels(@labels)
-
-  when '1'
-    list_all_books(@books)
-  when '6'
-    list_all_labels(@labels)
   when '2'
     @music_manager.list_all_music_album
   when '10'
