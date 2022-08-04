@@ -1,8 +1,10 @@
-require './classes/book_module'
-require './classes/store_module'
+require_relative '../modules/book_module'
+require_relative '../modules/label_module'
+require_relative '../modules/store_module'
 
 class App
   include BookModule
+  include LabelModule
   include StoreModule
   attr_accessor :books, :labels
 

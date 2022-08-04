@@ -1,7 +1,6 @@
 require './classes/app'
 require './classes/games_manager'
 require './classes/author_manager'
-require './classes/book'
 require './classes/music_manager'
 require './classes/genre_manager'
 
