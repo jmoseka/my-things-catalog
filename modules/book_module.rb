@@ -1,5 +1,5 @@
-require_relative './book'
-require_relative './label'
+require_relative '../classes/book'
+require_relative '../classes/label'
 
 module BookModule
   def add_book_instructions(books)
