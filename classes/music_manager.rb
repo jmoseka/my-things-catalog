@@ -1,4 +1,5 @@
 require_relative 'music_album'
+require_relative 'genre'
 require_relative 'genre_manager'
 require 'json'
 
@@ -9,7 +10,6 @@ class MusicManager
   end
 
   def add_music_album
-    puts '####################################'
     puts '####### Creating Music Album #######'
     puts '####################################'
     puts 'Album name: '
@@ -18,6 +18,8 @@ class MusicManager
     publish_date = gets.chomp
     puts 'Is it available on Spotify? Y/N'
     on_spotify = gets.chomp.downcase == 'y' || false
+    @music_albums.push(MusicAlbum.new(name, publish_date, on_spotify))
+    puts 'Music album created'
     music_album = MusicAlbum.new(name, publish_date, on_spotify)
     @music_albums.push(music_album)
     @genre_manager.add_genre_info(music_album)
