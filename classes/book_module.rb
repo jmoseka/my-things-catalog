@@ -25,6 +25,7 @@ module BookModule
       'cover_state' => book.cover_state
     }
     @books << hash
+    @books << Book.new(publisher, cover_state, publish_date)
   end
 
   def add_label_instructions(_labels)
@@ -47,6 +48,7 @@ module BookModule
       'color' => lbl.color
     }
     @labels << hash
+    @labels << Label.new(title, color)
   end
 
   def list_all_books(books)
@@ -56,6 +58,7 @@ module BookModule
     puts '--------------------------------------------'
     books.each do |book|
       puts "#{book['publisher']} \t\t| #{book['cover_state']} \t| #{book['publish_date']} "
+      puts "#{book.publisher} \t| #{book.cover_state} \t| #{book.publish_date} "
       puts "\n----------------------------"
     end
   end
@@ -67,6 +70,7 @@ module BookModule
     puts '----------------------------'
     labels.each do |lbl|
       puts "#{lbl['title']} \t| #{lbl['color']} "
+      puts "#{lbl.title} \t| #{lbl.color} "
     end
   end
 end
