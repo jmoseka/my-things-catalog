@@ -16,18 +16,12 @@ def homepage(input)
     list_all_books(@books)
   when '2'
     @music_manager.list_all_music_album
-  when '10'
-    @music_manager.add_music_album
   when '5'
     @music_manager.list_all_genres
   when '6'
     list_all_labels(@labels)
-  when '2'
-    @music_manager.list_all_music_album
   when '10'
     @music_manager.add_music_album
-  when '5'
-    @genres_manager.list_all_genres
   when '9'
     add_book_instructions(@books)
     add_label_instructions(@labels)
