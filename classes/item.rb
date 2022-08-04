@@ -24,6 +24,7 @@ class Item
     @label = label
     # label belongs to item
     label.items << self unless label.items.include?(self)
+  end
 
   def add_genre=(genre)
     @genre = genre
