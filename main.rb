@@ -1,6 +1,7 @@
 require './classes/app'
 require './classes/games_manager'
 require './classes/author_manager'
+require './classes/book'
 require './classes/music_manager'
 require './classes/genre_manager'
 
@@ -11,6 +12,11 @@ end
 
 def homepage(input)
   case input
+
+  when '1'
+    list_all_books(@books)
+  when '6'
+    list_all_labels(@labels)
   when '2'
     @music_manager.list_all_music_album
   when '10'
@@ -18,7 +24,8 @@ def homepage(input)
   when '5'
     @genres_manager.list_all_genres
   when '9'
-    add_book
+    add_book_instructions(@books)
+    add_label_instructions(@labels)
   when '13'
     @games_manager.store_games
     @author_manager.store_authors
