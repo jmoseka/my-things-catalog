@@ -9,6 +9,7 @@ class App
     @author_manager = AuthorManager.new
     @books = []
     @labels = []
+    @music_manager = MusicManager.new
   end
 
   def menu
