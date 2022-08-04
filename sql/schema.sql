@@ -15,3 +15,17 @@ CREATE TABLE game (
     CONSTRAINT fkey_author FOREIGN KEY (author_id) REFERENCES author(id) ON DELETE CASCADE,
     PRIMARY KEY(id)
 );
+
+-- MusicAlbum DB
+CREATE TABLE genre (
+    id  INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE music_album (
+    id  INT,
+    name VARCHAR(100),
+    on_spotify BOOLEAN,
+    FOREIGN KEY(id) REFERENCES item(id)
+);
