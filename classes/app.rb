@@ -39,7 +39,6 @@ class App
     @games_manager.load_games
     @author_manager.load_authors
     @music_manager.load_music_albums
-    @genres_manager.load_genres
     loop do
       homepage(menu)
     end

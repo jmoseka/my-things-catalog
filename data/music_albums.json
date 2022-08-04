@@ -1,1 +1,22 @@
-[{"name":"testing","publish_date":"2005-6-2","on_spotify":true}]
+[
+  {
+    "name": "testing",
+    "publish_date": "2005-6-2",
+    "on_spotify": true
+  },
+  {
+    "name": "Trophy",
+    "publish_date": "2003-4-3",
+    "on_spotify": true
+  },
+  {
+    "name": "Dreams",
+    "publish_date": "2002-4-5",
+    "on_spotify": true
+  },
+  {
+    "name": "DingDong Merily",
+    "publish_date": "1993-3-2",
+    "on_spotify": true
+  }
+]

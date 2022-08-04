@@ -2,33 +2,48 @@ require_relative 'genre'
 require 'json'
 
 class GenreManager
-    def initialize
-        @load_genres = load_genres 
-      end
+  def initialize
+    @load_genres = []
+  end
+
+  def read_data
+    return unless File.exist?('./data/genres.json')
+
+    file = File.read('./data/genres.json')
+    file_data = JSON.parse(file)
+    genres = []
+    file_data.each do |genre|
+      genre_instance = Genre.new(genre['name'])
+      genres.push(genre_instance)
+    end
+    genres
+  end
 
   def list_all_genres
     puts 'Genres:'
-    @load_genres.each do |genre|
+    read_data.each do |genre|
       puts "Genre name: #{genre.name}"
     end
   end
 
-  def load_genres
-    data = []
-    file = './data/genres.json'
-    if File.exist?(file) && File.read(file) != ''
-      JSON.parse(File.read(file)).each do |genre|
-        data.push(Genre.new(genre['name'], genre['id']))
-      end
+  def save_genre(genre)
+    read_data&.each do |data|
+      @load_genres.push({ name: data.name, id: data.id }) if data.name.downcase != genre.name.downcase
     end
-    data
+    @load_genres.push({ name: genre.name, id: genre.id })
+
+    File.write('./data/genres.json', JSON.pretty_generate(@load_genres))
   end
 
-  def save_genre
-    data = []
-    @music_albums.each do |genre|
-      data.push({ name: genre.name, id: genre.id })
-    end
-    File.write('./data/genres.json', JSON.generate(data))
+  def add_genre_info(item)
+    print "  What is the genre of the item?\n"
+    print '  name: '
+    genre_name = gets.chomp
+
+    genre = Genre.new(genre_name)
+
+    genre.add_item(item)
+
+    save_genre(genre)
   end
 end

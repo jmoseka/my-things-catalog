@@ -24,7 +24,6 @@ def homepage(input)
     @games_manager.store_games
     @author_manager.store_authors
     @music_manager.save_music_album
-    @genres_manager.save_genre
     puts 'Thanks for using the App'
     exit
   when '12'
