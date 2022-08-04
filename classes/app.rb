@@ -1,7 +1,9 @@
 require './classes/book_module'
+require './classes/store_module'
 
 class App
   include BookModule
+  include StoreModule
   attr_accessor :books, :labels
 
   def initialize
@@ -10,6 +12,7 @@ class App
     @books = []
     @labels = []
     @music_manager = MusicManager.new
+    @genres_manager = GenreManager.new
   end
 
   def menu
@@ -44,6 +47,7 @@ class App
   def run
     @games_manager.load_games
     @author_manager.load_authors
+    @music_manager.load_music_albums
     loop do
       homepage(menu)
     end
