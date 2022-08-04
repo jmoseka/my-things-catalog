@@ -2,11 +2,11 @@ require_relative '../classes/genre'
 
 describe Genre do
   before :each do
-    @genre = Genre.new('nancy')
+    @genre = Genre.new('thriller')
   end
 
   it 'should detect the genre name' do
-    expect(@genre.name).to eq 'nancy'
+    expect(@genre.name).to eq 'thriller'
   end
 
   it 'should detect the genre id' do

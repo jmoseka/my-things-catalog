@@ -2,20 +2,15 @@ require_relative 'item'
 require 'date'
 
 class MusicAlbum < Item
-  attr_accessor :on_spotify
+  attr_accessor :on_spotify, :name, :publish_date, :id
 
-  def initialize(publish_date, on_spotify: true)
-    super(publish_date)
+  def initialize(name, publish_date, on_spotify)
+    super(id, publish_date)
+    @name = name
     @on_spotify = on_spotify
   end
 
   def can_be_archived?
-    super && @on_spotify
+    super && @on_spotify == true
   end
 end
-
-# date = Date.today
-# p Date.parse(date)
-
-# music_album = MusicAlbum.new
-# p music_album.can_be_archived?
