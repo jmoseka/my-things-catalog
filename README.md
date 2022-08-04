@@ -75,4 +75,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/jmoseka/decode-morse-code/blob/decode-morse-code/LICENSE) is licensed.
+This project is [MIT](https://github.com/jmoseka/my-things-catalog/LICENSE) is licensed.
