@@ -43,14 +43,6 @@ $ rspec file_name
 
 ## Authors 👤 
 
-👤 **Anyanwu Chidinma Faith**
-
-- GitHub: [@Dinma-Faith](https://github.com/Dinma-Faith)
-
-👤 **Frankline Osoro**
-
-- GitHub: [@frank1738](https://github.com/frank1738)
-
 👤 **Jamila Moseka**
 
 - GitHub: [@jmoseka](https://github.com/jmoseka)
