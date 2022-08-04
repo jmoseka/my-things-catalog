@@ -19,7 +19,7 @@ def homepage(input)
     @music_manager.add_music_album
   when '5'
     @music_manager.list_all_genres
-    when '6'
+  when '6'
     list_all_labels(@labels)
   when '9'
     add_book_instructions(@books)
