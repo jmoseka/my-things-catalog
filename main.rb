@@ -11,7 +11,6 @@ end
 
 def homepage(input)
   case input
-
   when '2'
     @music_manager.list_all_music_album
   when '10'
