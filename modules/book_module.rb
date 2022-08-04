@@ -24,7 +24,6 @@ module BookModule
       'cover_state' => book.cover_state
     }
     @books << hash
-    @books << Book.new(publisher, cover_state, publish_date)
   end
 
   def list_all_books(books)
@@ -34,7 +33,6 @@ module BookModule
     puts '--------------------------------------------'
     books.each do |book|
       puts "#{book['publisher']} \t\t| #{book['cover_state']} \t| #{book['publish_date']} "
-      puts "#{book.publisher} \t| #{book.cover_state} \t| #{book.publish_date} "
       puts "\n----------------------------"
     end
   end

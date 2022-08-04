@@ -21,7 +21,6 @@ module LabelModule
       'color' => lbl.color
     }
     @labels << hash
-    @labels << Label.new(title, color)
   end
 
   def list_all_labels(labels)
@@ -31,7 +30,6 @@ module LabelModule
     puts '----------------------------'
     labels.each do |lbl|
       puts "#{lbl['title']} \t| #{lbl['color']} "
-      puts "#{lbl.title} \t| #{lbl.color} "
     end
   end
 end

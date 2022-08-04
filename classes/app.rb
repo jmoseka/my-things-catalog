@@ -15,6 +15,7 @@ class App
     @labels = []
     @music_manager = MusicManager.new
     @genres_manager = GenreManager.new
+    load_info
   end
 
   def menu
@@ -54,4 +55,10 @@ class App
       homepage(menu)
     end
   end
+
+  def load_info
+    @books = load_data('books')
+    @labels = load_data('labels')
+  end
+
 end
