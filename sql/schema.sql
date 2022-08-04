@@ -15,3 +15,17 @@ CREATE TABLE game (
     CONSTRAINT fkey_author FOREIGN KEY (author_id) REFERENCES author(id) ON DELETE CASCADE,
     PRIMARY KEY(id)
 );
+
+CREATE TABLE Book (
+id BIGSERIAL PRIMARY KEY,
+publisher VARCHAR(100),
+cover_date VARCHAR(100),
+FOREIGN KEY(id) REFERENCES item(id)
+);
+
+CREATE TABLE label (
+id BIGSERIAL PRIMARY KEY,
+title VARCHAR(100),
+color VARCHAR(50)
+items INT []
+);
