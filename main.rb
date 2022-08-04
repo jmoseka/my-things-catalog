@@ -12,7 +12,6 @@ end
 
 def homepage(input)
   case input
-
   when '1'
     list_all_books(@books)
   when '6'
@@ -29,6 +28,8 @@ def homepage(input)
   when '13'
     @games_manager.store_games
     @author_manager.store_authors
+    save_data(@books, 'books')
+    save_data(@labels, 'labels')
     @music_manager.save_music_album
     puts 'Thanks for using the App'
     exit
