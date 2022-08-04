@@ -60,5 +60,4 @@ class App
     @books = load_data('books')
     @labels = load_data('labels')
   end
-
 end
