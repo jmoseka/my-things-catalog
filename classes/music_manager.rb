@@ -21,9 +21,9 @@ class MusicManager
     music_album = MusicAlbum.new(name, publish_date, on_spotify)
     @music_albums.push(music_album)
     @genre_manager.add_genre_info(music_album)
-    puts '-----------------------------------'
-    puts '------- Music album created -------'
-    puts '-----------------------------------'
+    puts '*---------------------------------*'
+    puts '*-----* Music album created *-----*'
+    puts '*---------------------------------*'
   end
 
   def list_all_music_album
