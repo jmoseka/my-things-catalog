@@ -30,7 +30,7 @@ def homepage(input)
     @music_manager.add_music_album
   when '9'
     @games_manager.add_game(@author_manager)
-  
+
   when '10'
     @games_manager.store_games
     @author_manager.store_authors
