@@ -49,6 +49,13 @@ $ rspec file_name
 - Twitter: [@milamoseka](https://twitter.com/milamoseka)
 - LinkedIn: [Jamila Moseka](https://linkedin.com/in/jamila-moseka)
 
+👤 **Dinma-Faith**
+
+- GitHub: [@githubhandle](https://github.com/Dinma-Faith)
+- Twitter: [@twitterhandle](https://twitter.com/phayte_p)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/chidinma-faith)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
