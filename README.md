@@ -84,4 +84,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/jmoseka/my-things-catalog/LICENSE) is licensed.
+This project is [MIT](https://github.com/jmoseka/my-things-catalog/blob/dev/LICENSE) is licensed.
