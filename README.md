@@ -4,6 +4,10 @@
 
  <img src="./catalog_of_my_things.png" alt="screenshot" />
 
+  ## Project Presentation 📹
+
+### [Link](https://drive.google.com/file/d/119aaxdnq_QkQUHF0K31wz3fQB6Ekiw41/view?usp=sharing)
+
 ## Getting Started
 
 ### Prerequisites
@@ -43,12 +47,6 @@ $ rspec file_name
 
 ## Authors 👤 
 
-👤 **Jamila Moseka**
-
-- GitHub: [@jmoseka](https://github.com/jmoseka)
-- Twitter: [@milamoseka](https://twitter.com/milamoseka)
-- LinkedIn: [Jamila Moseka](https://linkedin.com/in/jamila-moseka)
-
 👤 **Dinma-Faith**
 
 - GitHub: [@githubhandle](https://github.com/Dinma-Faith)
@@ -60,6 +58,12 @@ $ rspec file_name
 - GitHub: [@frank1738](https://github.com/frank1738)
 - Twitter: [@frankhiggins08](https://twitter.com/frankhiggins08)
 - LinkedIn: [Frankline Osoro](http://www.linkedin.com/in/frankline-osoro-b526ba18b)
+
+👤 **Jamila Moseka**
+
+- GitHub: [@jmoseka](https://github.com/jmoseka)
+- Twitter: [@milamoseka](https://twitter.com/milamoseka)
+- LinkedIn: [Jamila Moseka](https://linkedin.com/in/jamila-moseka)
 
 
 ## 🤝 Contributing
