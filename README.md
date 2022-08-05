@@ -4,6 +4,10 @@
 
  <img src="./catalog_of_my_things.png" alt="screenshot" />
 
+  ## Project Presentation 📹
+
+### [Link](https://drive.google.com/file/d/119aaxdnq_QkQUHF0K31wz3fQB6Ekiw41/view?usp=sharing)
+
 ## Getting Started
 
 ### Prerequisites
@@ -43,17 +47,23 @@ $ rspec file_name
 
 ## Authors 👤 
 
-👤 **Jamila Moseka**
-
-- GitHub: [@jmoseka](https://github.com/jmoseka)
-- Twitter: [@milamoseka](https://twitter.com/milamoseka)
-- LinkedIn: [Jamila Moseka](https://linkedin.com/in/jamila-moseka)
-
 👤 **Dinma-Faith**
 
 - GitHub: [@githubhandle](https://github.com/Dinma-Faith)
 - Twitter: [@twitterhandle](https://twitter.com/phayte_p)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/chidinma-faith)
+
+👤 **Frankline Osoro**
+
+- GitHub: [@frank1738](https://github.com/frank1738)
+- Twitter: [@frankhiggins08](https://twitter.com/frankhiggins08)
+- LinkedIn: [Frankline Osoro](http://www.linkedin.com/in/frankline-osoro-b526ba18b)
+
+👤 **Jamila Moseka**
+
+- GitHub: [@jmoseka](https://github.com/jmoseka)
+- Twitter: [@milamoseka](https://twitter.com/milamoseka)
+- LinkedIn: [Jamila Moseka](https://linkedin.com/in/jamila-moseka)
 
 
 ## 🤝 Contributing
@@ -74,4 +84,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/jmoseka/my-things-catalog/LICENSE) is licensed.
+This project is [MIT](https://github.com/jmoseka/my-things-catalog/blob/dev/LICENSE) is licensed.
