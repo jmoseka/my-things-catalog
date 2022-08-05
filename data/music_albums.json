@@ -18,5 +18,25 @@
     "name": "DingDong Merily",
     "publish_date": "1993-3-2",
     "on_spotify": true
+  },
+  {
+    "name": "Pop smoke",
+    "publish_date": "2003-4-5",
+    "on_spotify": true
+  },
+  {
+    "name": "Obsasses",
+    "publish_date": "2003-4-5",
+    "on_spotify": true
+  },
+  {
+    "name": "Heal the world",
+    "publish_date": "1993-2-2",
+    "on_spotify": true
+  },
+  {
+    "name": "Bizzy Body",
+    "publish_date": "2003-9-5",
+    "on_spotify": false
   }
 ]
