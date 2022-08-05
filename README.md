@@ -55,6 +55,12 @@ $ rspec file_name
 - Twitter: [@twitterhandle](https://twitter.com/phayte_p)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/chidinma-faith)
 
+👤 **Frankline Osoro**
+
+- GitHub: [@frank1738](https://github.com/frank1738)
+- Twitter: [@frankhiggins08](https://twitter.com/frankhiggins08)
+- LinkedIn: [Frankline Osoro](http://www.linkedin.com/in/frankline-osoro-b526ba18b)
+
 
 ## 🤝 Contributing
 
